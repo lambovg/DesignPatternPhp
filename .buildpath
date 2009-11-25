@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <buildpath>
-	<buildpathentry kind="src" path="adapter"/>
-	<buildpathentry kind="src" path="bridge"/>
-	<buildpathentry kind="src" path="command"/>
-	<buildpathentry kind="src" path="decorator"/>
-	<buildpathentry kind="src" path="factory"/>
-	<buildpathentry kind="src" path="observer"/>
-	<buildpathentry kind="src" path="singleton"/>
-	<buildpathentry kind="src" path="strategy"/>
+	<buildpathentry kind="src" path=""/>
 	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
 </buildpath>
