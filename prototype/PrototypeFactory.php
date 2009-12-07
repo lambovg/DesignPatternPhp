@@ -20,7 +20,7 @@ abstract class PrototypeFactory
 	 * @access public
 	 * @return void
 	 */
-	abstract public function __construct(int $x);
+	abstract public function prototypeFactory(int $x);
 	
 	/**
 	 * @access public
