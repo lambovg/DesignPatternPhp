@@ -1,0 +1,7 @@
+The Builder Pattern is a software design pattern. The intention is to abstract steps of construction
+of objects so that different implementations of these steps can construct different representations
+of objects.
+
+Often, the Builder Pattern is used to build Products in accordance to the Composite pattern,
+a structural pattern.
+
