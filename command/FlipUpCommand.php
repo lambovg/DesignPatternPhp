@@ -1,29 +1,22 @@
 <?php
+/**
+ * The Command for turning on the light
+ */
 class FlipUpCommand implements iCommand
 {
-  /**
-   * Enter description here...
-   *
-   * @var unknown_type
-   */
-  private $light;
+    /**
+     * @var Light
+     */
+    private $theLight = null;
 
-  /**
-   * Enter description here...
-   *
-   */
-  public function __construct(Light $light)
-  {
-    $this->light = $light;
-  }
+    public function __construct(Light $light)
+    {
+        $this->theLight = $light;
+    }
 
-  /**
-   * Enter description here...
-   *
-   */
-  public function execute()
-  {
-    $this->light->turnOn();
-  }
+    public function execute()
+    {
+        $this->theLight->turnOn();
+    }
 }
-?>
+

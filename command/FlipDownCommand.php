@@ -1,25 +1,22 @@
 <?php
+/**
+ * The Command for turning off the light
+ */
 class FlipDownCommand implements iCommand
 {
-  /**
-   * Enter description here...
-   *
-   * @var unknown_type
-   */
-  private $light;
+    /**
+     * @var Light
+     */
+    private $theLight = null;
 
-  public function __construct(Light $light)
-  {
-    $this->light = $light;
-  }
+    public function __construct(Light $light)
+    {
+        $this->theLight = $light;
+    }
 
-  /**
-   *
-   *
-   */
-  public function execute()
-  {
-    $this->light->turnOff();
-  }
+    public function execute()
+    {
+        $this->theLight->turnOff();
+    }
 }
-?>
+

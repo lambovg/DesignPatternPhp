@@ -1,27 +1,20 @@
 <?php
+/**
+ * The Receiver class
+ *
+ */
 class Light
 {
-  public function __construct()
-  {
+    public function __construct() {}
 
-  }
+    public function turnOn()
+    {
+        echo 'The light is on';
+    }
 
-  /**
-   * Enter description here...
-   *
-   */
-  public function turnOn()
-  {
-    return 'This light is on';
-  }
-
-  /**
-   * Enter description here...
-   *
-   */
-  public function turnOff()
-  {
-    return 'This light is off';
-  }
+    public function turnOff()
+    {
+        echo 'The light is turn off';
+    }
 }
-?>
+

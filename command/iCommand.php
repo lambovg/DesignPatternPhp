@@ -1,10 +1,13 @@
 <?php
+/**
+ * The Command interface
+ *
+ */
 interface iCommand
 {
-  /**
-   * Enter description here...
-   *
-   */
-  public function execute();
+    /**
+     * @return Void
+     */
+    public function execute();
 }
-?>
+

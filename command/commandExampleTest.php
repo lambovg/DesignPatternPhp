@@ -5,10 +5,18 @@ function __autoload($className)
 }
 
 $pressSwitch = new PressSwitch(array(
-  0 => 'ON'
+  0 => 'OFF'
 ));
 
 echo '<pre>';
 var_dump($pressSwitch);
 echo '</pre>';
-?>
+
+$pressSwitch = new PressSwitch(array(
+  0 => 'On'
+));
+
+echo '<pre>';
+var_dump($pressSwitch);
+echo '</pre>';
+

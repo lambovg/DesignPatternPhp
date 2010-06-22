@@ -1,28 +1,32 @@
 <?php
+/**
+ * The Client (invoker)
+ *
+ */
 class PressSwitch
 {
-  public function __construct($args = array())
-  {
-    $lamp = new Light();
-    $switchUp = new FlipUpCommand($lamp);
-    $switchDown = new FlipDownCommand($lamp);
-
-    $switcher = new Switcher($switchUp, $switchDown);
-
-    switch($args[0])
+    public function __construct($args = array())
     {
-      case 'ON':
-        $switcher->flipUp();
-        break;
+        $lamp = new Light();
 
-      case 'OFF':
-        $switcher->flipDown();
-        break;
+        $switchUp = new FlipUpCommand($lamp);
+        $swithDown = new FlipDownCommand($lamp);
 
-      default:
-        throw new Exception('Arguments ON / OFF are required');
-        break;
+        $s = new Switcher($switchUp, $swithDown);
+
+        try
+        {
+            if(strcmp(strtolower($args[0]), 'on') == 0)
+                $s->flipUp();
+            elseif(strcmp(strtolower($args[0]), 'off') == 0)
+                $s->flipDown();
+            else
+                throw new Exception('Argument ON or OFF is required');
+        }
+        catch(Exception $e)
+        {
+            throw $e;
+        }
     }
-  }
 }
-?>
+

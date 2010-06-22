@@ -1,0 +1,14 @@
+In object-oriented programming, the command pattern is a design pattern in which an object
+is used to represent and encapsulate all the information needed to call a method at a later time.
+This information includes the method name, the object that owns the method and values
+for the method parameters.
+
+Three terms always associated with the command pattern are client, invoker and receiver.
+The client instantiates the command object and provides the information required to call
+the method at a later time. The invoker decides when the method should be called.
+The receiver is an instance of the class that contains the method's code.
+
+Using command objects makes it easier to construct general components that need to delegate,
+sequence or execute method calls at a time of their choosing without the need to know the
+owner of the method or the method parameters.
+
